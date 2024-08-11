@@ -6,6 +6,7 @@ import ButtonView from '@/views/Containment/ButtonView.vue'
 import CardView from '@/views/Containment/CardView.vue'
 import ChipView from '@/views/Containment/ChipView.vue'
 import DialogsView from '@/views/Containment/DialogsView.vue'
+import Dividers from '@/views/Containment/Dividers.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +40,11 @@ const router = createRouter({
       path: '/DialogsView',
       name: 'DialogsView',
       component: DialogsView
+    },
+    {
+      path: '/Dividers',
+      name: 'Dividers',
+      component: Dividers
     }
   ]
 })
