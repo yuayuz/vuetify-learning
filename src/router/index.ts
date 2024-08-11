@@ -5,6 +5,7 @@ import Button from '@/views/Containment/ButtonView.vue'
 import ButtonView from '@/views/Containment/ButtonView.vue'
 import CardView from '@/views/Containment/CardView.vue'
 import ChipView from '@/views/Containment/ChipView.vue'
+import DialogsView from '@/views/Containment/DialogsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/ChipView',
       name: 'ChipView',
       component: ChipView
+    },
+    {
+      path: '/DialogsView',
+      name: 'DialogsView',
+      component: DialogsView
     }
   ]
 })

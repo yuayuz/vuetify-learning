@@ -12,6 +12,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="ButtonView"></home-button>
     <home-button page="CardView"></home-button>
     <home-button page="ChipView"></home-button>
+    <home-button page="DialogsView"></home-button>
   </div>
 </template>
 
