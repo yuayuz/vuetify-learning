@@ -4,6 +4,7 @@ import VBottomSheet from '@/views/Containment/VBottomSheet.vue'
 import Button from '@/views/Containment/ButtonView.vue'
 import ButtonView from '@/views/Containment/ButtonView.vue'
 import CardView from '@/views/Containment/CardView.vue'
+import ChipView from '@/views/Containment/ChipView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/CardView',
       name: 'CardView',
       component: CardView
+    },
+    {
+      path: '/ChipView',
+      name: 'ChipView',
+      component: ChipView
     }
   ]
 })

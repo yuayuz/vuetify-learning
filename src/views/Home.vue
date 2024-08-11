@@ -11,6 +11,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="VBottomSheet"></home-button>
     <home-button page="ButtonView"></home-button>
     <home-button page="CardView"></home-button>
+    <home-button page="ChipView"></home-button>
   </div>
 </template>
 
