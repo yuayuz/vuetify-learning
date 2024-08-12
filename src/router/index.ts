@@ -15,6 +15,7 @@ import Sheets from '@/views/Containment/Sheets.vue'
 import ToolBars from '@/views/Containment/ToolBars.vue'
 import ToolTips from '@/views/Containment/ToolTips.vue'
 import AppBars from '@/views/Navigation/AppBars.vue'
+import BottomNavigation from '@/views/Navigation/BottomNavigation.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -93,6 +94,11 @@ const router = createRouter({
       path: '/AppBars',
       name: 'AppBars',
       component: AppBars
+    },
+    {
+      path: '/BottomNavigation',
+      name: 'BottomNavigation',
+      component: BottomNavigation
     }
   ]
 })
