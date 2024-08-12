@@ -20,6 +20,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Overlays"></home-button>
     <home-button page="Sheets"></home-button>
     <home-button page="ToolBars"></home-button>
+    <home-button page="ToolTips"></home-button>
   </div>
 </template>
 

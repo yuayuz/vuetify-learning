@@ -13,6 +13,7 @@ import Menus from '@/views/Containment/Menus.vue'
 import Overlays from '@/views/Containment/Overlays.vue'
 import Sheets from '@/views/Containment/Sheets.vue'
 import ToolBars from '@/views/Containment/ToolBars.vue'
+import ToolTips from '@/views/Containment/ToolTips.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -81,6 +82,11 @@ const router = createRouter({
       path: '/ToolBars',
       name: 'ToolBars',
       component: ToolBars
+    },
+    {
+      path: '/ToolTips',
+      name: 'ToolTips',
+      component: ToolTips
     }
   ]
 })
