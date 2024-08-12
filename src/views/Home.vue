@@ -18,6 +18,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="ListsView"></home-button>
     <home-button page="Menus"></home-button>
     <home-button page="Overlays"></home-button>
+    <home-button page="Sheets"></home-button>
   </div>
 </template>
 

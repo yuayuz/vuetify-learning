@@ -11,6 +11,7 @@ import ExpansionPanels from '@/views/Containment/ExpansionPanels.vue'
 import ListsView from '@/views/Containment/ListsView.vue'
 import Menus from '@/views/Containment/Menus.vue'
 import Overlays from '@/views/Containment/Overlays.vue'
+import Sheets from '@/views/Containment/Sheets.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -69,6 +70,11 @@ const router = createRouter({
       path: '/Overlays',
       name: 'Overlays',
       component: Overlays
+    },
+    {
+      path: '/Sheets',
+      name: 'Sheets',
+      component: Sheets
     }
   ]
 })
