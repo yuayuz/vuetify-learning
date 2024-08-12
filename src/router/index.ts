@@ -16,6 +16,7 @@ import ToolBars from '@/views/Containment/ToolBars.vue'
 import ToolTips from '@/views/Containment/ToolTips.vue'
 import AppBars from '@/views/Navigation/AppBars.vue'
 import BottomNavigation from '@/views/Navigation/BottomNavigation.vue'
+import Breadcrumbs from '@/views/Navigation/Breadcrumbs.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -99,6 +100,11 @@ const router = createRouter({
       path: '/BottomNavigation',
       name: 'BottomNavigation',
       component: BottomNavigation
+    },
+    {
+      path: '/Breadcrumbs',
+      name: 'Breadcrumbs',
+      component: Breadcrumbs
     }
   ]
 })
