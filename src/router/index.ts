@@ -14,6 +14,7 @@ import Overlays from '@/views/Containment/Overlays.vue'
 import Sheets from '@/views/Containment/Sheets.vue'
 import ToolBars from '@/views/Containment/ToolBars.vue'
 import ToolTips from '@/views/Containment/ToolTips.vue'
+import AppBars from '@/views/Navigation/AppBars.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -87,6 +88,11 @@ const router = createRouter({
       path: '/ToolTips',
       name: 'ToolTips',
       component: ToolTips
+    },
+    {
+      path: '/AppBars',
+      name: 'AppBars',
+      component: AppBars
     }
   ]
 })

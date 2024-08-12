@@ -22,6 +22,10 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="ToolBars"></home-button>
     <home-button page="ToolTips"></home-button>
   </div>
+  <title-p1>Navigation</title-p1>
+  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+    <home-button page="AppBars"></home-button>
+  </div>
 </template>
 
 <style scoped></style>
