@@ -10,6 +10,7 @@ import Dividers from '@/views/Containment/Dividers.vue'
 import ExpansionPanels from '@/views/Containment/ExpansionPanels.vue'
 import ListsView from '@/views/Containment/ListsView.vue'
 import Menus from '@/views/Containment/Menus.vue'
+import Overlays from '@/views/Containment/Overlays.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -63,6 +64,11 @@ const router = createRouter({
       path: '/Menus',
       name: 'Menus',
       component: Menus
+    },
+    {
+      path: '/Overlays',
+      name: 'Overlays',
+      component: Overlays
     }
   ]
 })
