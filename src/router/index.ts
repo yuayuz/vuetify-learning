@@ -8,6 +8,7 @@ import ChipView from '@/views/Containment/ChipView.vue'
 import DialogsView from '@/views/Containment/DialogsView.vue'
 import Dividers from '@/views/Containment/Dividers.vue'
 import ExpansionPanels from '@/views/Containment/ExpansionPanels.vue'
+import ListsView from '@/views/Containment/ListsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -51,6 +52,11 @@ const router = createRouter({
       path: '/ExpansionPanels',
       name: 'ExpansionPanels',
       component: ExpansionPanels
+    },
+    {
+      path: '/ListsView',
+      name: 'ListsView',
+      component: ListsView
     }
   ]
 })
