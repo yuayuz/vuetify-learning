@@ -22,6 +22,7 @@ import Footers from '@/views/Navigation/Footers.vue'
 import NavigationDrawer from '@/views/Navigation/NavigationDrawer.vue'
 import Pagination from '@/views/Navigation/Pagination.vue'
 import SpeedDials from '@/views/Navigation/SpeedDials.vue'
+import Tabs from '@/views/Navigation/Tabs.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -135,6 +136,11 @@ const router = createRouter({
       path: '/SpeedDials',
       name: 'SpeedDials',
       component: SpeedDials
+    },
+    {
+      path: '/Tabs',
+      name: 'Tabs',
+      component: Tabs
     }
   ]
 })
