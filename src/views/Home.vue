@@ -41,6 +41,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Checkboxes"></home-button>
     <home-button page="Combobox"></home-button>
     <home-button page="FileInput"></home-button>
+    <home-button page="Forms"></home-button>
   </div>
 </template>
 
