@@ -17,6 +17,7 @@ import ToolTips from '@/views/Containment/ToolTips.vue'
 import AppBars from '@/views/Navigation/AppBars.vue'
 import BottomNavigation from '@/views/Navigation/BottomNavigation.vue'
 import Breadcrumbs from '@/views/Navigation/Breadcrumbs.vue'
+import FloatingActionButtons from '@/views/Navigation/FloatingActionButtons.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -105,6 +106,11 @@ const router = createRouter({
       path: '/Breadcrumbs',
       name: 'Breadcrumbs',
       component: Breadcrumbs
+    },
+    {
+      path: '/FloatingActionButtons',
+      name: 'FloatingActionButtons',
+      component: FloatingActionButtons
     }
   ]
 })

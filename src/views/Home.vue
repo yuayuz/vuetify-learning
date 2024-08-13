@@ -27,6 +27,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="AppBars"></home-button>
     <home-button page="BottomNavigation"></home-button>
     <home-button page="Breadcrumbs"></home-button>
+    <home-button page="FloatingActionButtons"></home-button>
   </div>
 </template>
 
