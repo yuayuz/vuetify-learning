@@ -25,6 +25,7 @@ import SpeedDials from '@/views/Navigation/SpeedDials.vue'
 import Tabs from '@/views/Navigation/Tabs.vue'
 import Autocomplete from '@/views/FormInput/Autocomplete.vue'
 import Checkboxes from '@/views/FormInput/Checkboxes.vue'
+import Combobox from '@/views/FormInput/Combobox.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -153,6 +154,11 @@ const router = createRouter({
       path: '/Checkboxes',
       name: 'Checkboxes',
       component: Checkboxes
+    },
+    {
+      path: '/Combobox',
+      name: 'Combobox',
+      component: Combobox
     }
   ]
 })
