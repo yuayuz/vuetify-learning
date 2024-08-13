@@ -19,6 +19,7 @@ import BottomNavigation from '@/views/Navigation/BottomNavigation.vue'
 import Breadcrumbs from '@/views/Navigation/Breadcrumbs.vue'
 import FloatingActionButtons from '@/views/Navigation/FloatingActionButtons.vue'
 import Footers from '@/views/Navigation/Footers.vue'
+import NavigationDrawer from '@/views/Navigation/NavigationDrawer.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -117,6 +118,11 @@ const router = createRouter({
       path: '/Footers',
       name: 'Footers',
       component: Footers
+    },
+    {
+      path: '/NavigationDrawer',
+      name: 'NavigationDrawer',
+      component: NavigationDrawer
     }
   ]
 })

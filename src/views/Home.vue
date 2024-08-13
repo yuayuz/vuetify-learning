@@ -29,6 +29,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Breadcrumbs"></home-button>
     <home-button page="FloatingActionButtons"></home-button>
     <home-button page="Footers"></home-button>
+    <home-button page="NavigationDrawer"></home-button>
   </div>
 </template>
 
