@@ -30,6 +30,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="FloatingActionButtons"></home-button>
     <home-button page="Footers"></home-button>
     <home-button page="NavigationDrawer"></home-button>
+    <home-button page="Pagination"></home-button>
   </div>
 </template>
 
