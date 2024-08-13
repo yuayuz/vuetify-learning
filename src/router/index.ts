@@ -30,6 +30,7 @@ import FileInput from '@/views/FormInput/FileInput.vue'
 import Forms from '@/views/FormInput/Forms.vue'
 import CustomInputs from '@/views/FormInput/CustomInputs.vue'
 import OPT from '@/views/FormInput/OPT.vue'
+import RadioButtons from '@/views/FormInput/RadioButtons.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -183,6 +184,11 @@ const router = createRouter({
       path: '/OPT',
       name: 'OPT',
       component: OPT
+    },
+    {
+      path: '/RadioButtons',
+      name: 'RadioButtons',
+      component: RadioButtons
     }
   ]
 })
