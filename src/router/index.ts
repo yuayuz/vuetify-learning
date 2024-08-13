@@ -18,6 +18,7 @@ import AppBars from '@/views/Navigation/AppBars.vue'
 import BottomNavigation from '@/views/Navigation/BottomNavigation.vue'
 import Breadcrumbs from '@/views/Navigation/Breadcrumbs.vue'
 import FloatingActionButtons from '@/views/Navigation/FloatingActionButtons.vue'
+import Footers from '@/views/Navigation/Footers.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -111,6 +112,11 @@ const router = createRouter({
       path: '/FloatingActionButtons',
       name: 'FloatingActionButtons',
       component: FloatingActionButtons
+    },
+    {
+      path: '/Footers',
+      name: 'Footers',
+      component: Footers
     }
   ]
 })
