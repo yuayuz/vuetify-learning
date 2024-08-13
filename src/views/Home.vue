@@ -31,6 +31,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Footers"></home-button>
     <home-button page="NavigationDrawer"></home-button>
     <home-button page="Pagination"></home-button>
+    <home-button page="SpeedDials"></home-button>
   </div>
 </template>
 
