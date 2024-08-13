@@ -28,6 +28,7 @@ import Checkboxes from '@/views/FormInput/Checkboxes.vue'
 import Combobox from '@/views/FormInput/Combobox.vue'
 import FileInput from '@/views/FormInput/FileInput.vue'
 import Forms from '@/views/FormInput/Forms.vue'
+import CustomInputs from '@/views/FormInput/CustomInputs.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -171,6 +172,11 @@ const router = createRouter({
       path: '/Forms',
       name: 'Forms',
       component: Forms
+    },
+    {
+      path: '/CustomInputs',
+      name: 'CustomInputs',
+      component: CustomInputs
     }
   ]
 })
