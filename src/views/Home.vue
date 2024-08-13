@@ -40,6 +40,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Autocomplete"></home-button>
     <home-button page="Checkboxes"></home-button>
     <home-button page="Combobox"></home-button>
+    <home-button page="FileInput"></home-button>
   </div>
 </template>
 

@@ -26,6 +26,7 @@ import Tabs from '@/views/Navigation/Tabs.vue'
 import Autocomplete from '@/views/FormInput/Autocomplete.vue'
 import Checkboxes from '@/views/FormInput/Checkboxes.vue'
 import Combobox from '@/views/FormInput/Combobox.vue'
+import FileInput from '@/views/FormInput/FileInput.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -159,6 +160,11 @@ const router = createRouter({
       path: '/Combobox',
       name: 'Combobox',
       component: Combobox
+    },
+    {
+      path: '/FileInput',
+      name: 'FileInput',
+      component: FileInput
     }
   ]
 })
