@@ -34,6 +34,11 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="SpeedDials"></home-button>
     <home-button page="Tabs"></home-button>
   </div>
+
+  <title-p1>Form Input</title-p1>
+  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+    <home-button page="Autocomplete"></home-button>
+  </div>
 </template>
 
 <style scoped></style>

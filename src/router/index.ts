@@ -23,6 +23,7 @@ import NavigationDrawer from '@/views/Navigation/NavigationDrawer.vue'
 import Pagination from '@/views/Navigation/Pagination.vue'
 import SpeedDials from '@/views/Navigation/SpeedDials.vue'
 import Tabs from '@/views/Navigation/Tabs.vue'
+import Autocomplete from '@/views/FormInput/Autocomplete.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -141,6 +142,11 @@ const router = createRouter({
       path: '/Tabs',
       name: 'Tabs',
       component: Tabs
+    },
+    {
+      path: '/Autocomplete',
+      name: 'Autocomplete',
+      component: Autocomplete
     }
   ]
 })
