@@ -29,6 +29,7 @@ import Combobox from '@/views/FormInput/Combobox.vue'
 import FileInput from '@/views/FormInput/FileInput.vue'
 import Forms from '@/views/FormInput/Forms.vue'
 import CustomInputs from '@/views/FormInput/CustomInputs.vue'
+import OPT from '@/views/FormInput/OPT.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -177,6 +178,11 @@ const router = createRouter({
       path: '/CustomInputs',
       name: 'CustomInputs',
       component: CustomInputs
+    },
+    {
+      path: '/OPT',
+      name: 'OPT',
+      component: OPT
     }
   ]
 })
