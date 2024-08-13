@@ -24,6 +24,7 @@ import Pagination from '@/views/Navigation/Pagination.vue'
 import SpeedDials from '@/views/Navigation/SpeedDials.vue'
 import Tabs from '@/views/Navigation/Tabs.vue'
 import Autocomplete from '@/views/FormInput/Autocomplete.vue'
+import Checkboxes from '@/views/FormInput/Checkboxes.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -147,6 +148,11 @@ const router = createRouter({
       path: '/Autocomplete',
       name: 'Autocomplete',
       component: Autocomplete
+    },
+    {
+      path: '/Checkboxes',
+      name: 'Checkboxes',
+      component: Checkboxes
     }
   ]
 })
