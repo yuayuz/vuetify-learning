@@ -34,6 +34,7 @@ import RadioButtons from '@/views/FormInput/RadioButtons.vue'
 import RangeSliders from '@/views/FormInput/RangeSliders.vue'
 import Selects from '@/views/FormInput/Selects.vue'
 import Sliders from '@/views/FormInput/Sliders.vue'
+import Switches from '@/views/FormInput/Switches.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -207,6 +208,11 @@ const router = createRouter({
       path: '/Sliders',
       name: 'Sliders',
       component: Sliders
+    },
+    {
+      path: '/Switches',
+      name: 'Switches',
+      component: Switches
     }
   ]
 })
