@@ -35,6 +35,7 @@ import RangeSliders from '@/views/FormInput/RangeSliders.vue'
 import Selects from '@/views/FormInput/Selects.vue'
 import Sliders from '@/views/FormInput/Sliders.vue'
 import Switches from '@/views/FormInput/Switches.vue'
+import TextFields from '@/views/FormInput/TextFields.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -213,6 +214,11 @@ const router = createRouter({
       path: '/Switches',
       name: 'Switches',
       component: Switches
+    },
+    {
+      path: '/TextFields',
+      name: 'TextFields',
+      component: TextFields
     }
   ]
 })
