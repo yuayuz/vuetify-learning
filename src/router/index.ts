@@ -43,6 +43,7 @@ import DataTables from '@/views/DataAndDisplay/DataTables.vue'
 import SparkLines from '@/views/DataAndDisplay/SparkLines.vue'
 import InfiniteScroll from '@/views/DataAndDisplay/InfiniteScroll.vue'
 import ButtonToggles from '@/views/Selection/ButtonToggles.vue'
+import Carousels from '@/views/Selection/Carousels.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -261,6 +262,11 @@ const router = createRouter({
       path: '/ButtonToggles',
       name: 'ButtonToggles',
       component: ButtonToggles
+    },
+    {
+      path: '/Carousels',
+      name: 'Carousels',
+      component: Carousels
     }
   ]
 })
