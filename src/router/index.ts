@@ -41,6 +41,7 @@ import ConfirmEdit from '@/views/DataAndDisplay/ConfirmEdit.vue'
 import DataIterators from '@/views/DataAndDisplay/DataIterators.vue'
 import DataTables from '@/views/DataAndDisplay/DataTables.vue'
 import SparkLines from '@/views/DataAndDisplay/SparkLines.vue'
+import InfiniteScroll from '@/views/DataAndDisplay/InfiniteScroll.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -249,6 +250,11 @@ const router = createRouter({
       path: '/SparkLines',
       name: 'SparkLines',
       component: SparkLines
+    },
+    {
+      path: '/InfiniteScroll',
+      name: 'InfiniteScroll',
+      component: InfiniteScroll
     }
   ]
 })

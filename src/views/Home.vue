@@ -58,6 +58,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="DataIterators"></home-button>
     <home-button page="DataTables"></home-button>
     <home-button page="SparkLines"></home-button>
+    <home-button page="InfiniteScroll"></home-button>
   </div>
 </template>
 
