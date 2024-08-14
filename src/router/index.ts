@@ -40,6 +40,7 @@ import TextAreas from '@/views/FormInput/TextAreas.vue'
 import ConfirmEdit from '@/views/DataAndDisplay/ConfirmEdit.vue'
 import DataIterators from '@/views/DataAndDisplay/DataIterators.vue'
 import DataTables from '@/views/DataAndDisplay/DataTables.vue'
+import SparkLines from '@/views/DataAndDisplay/SparkLines.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -243,6 +244,11 @@ const router = createRouter({
       path: '/DataTables',
       name: 'DataTables',
       component: DataTables
+    },
+    {
+      path: '/SparkLines',
+      name: 'SparkLines',
+      component: SparkLines
     }
   ]
 })

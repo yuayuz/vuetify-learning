@@ -57,6 +57,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="ConfirmEdit"></home-button>
     <home-button page="DataIterators"></home-button>
     <home-button page="DataTables"></home-button>
+    <home-button page="SparkLines"></home-button>
   </div>
 </template>
 
