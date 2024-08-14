@@ -50,6 +50,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Sliders"></home-button>
     <home-button page="Switches"></home-button>
     <home-button page="TextFields"></home-button>
+    <home-button page="TextAreas"></home-button>
   </div>
 </template>
 
