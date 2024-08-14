@@ -60,6 +60,10 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="SparkLines"></home-button>
     <home-button page="InfiniteScroll"></home-button>
   </div>
+  <title-p1>选择组件 (Selection)</title-p1>
+  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+    <home-button page="ButtonToggles"></home-button>
+  </div>
 </template>
 
 <style scoped></style>

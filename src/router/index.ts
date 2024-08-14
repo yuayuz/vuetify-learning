@@ -42,6 +42,7 @@ import DataIterators from '@/views/DataAndDisplay/DataIterators.vue'
 import DataTables from '@/views/DataAndDisplay/DataTables.vue'
 import SparkLines from '@/views/DataAndDisplay/SparkLines.vue'
 import InfiniteScroll from '@/views/DataAndDisplay/InfiniteScroll.vue'
+import ButtonToggles from '@/views/Selection/ButtonToggles.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -255,6 +256,11 @@ const router = createRouter({
       path: '/InfiniteScroll',
       name: 'InfiniteScroll',
       component: InfiniteScroll
+    },
+    {
+      path: '/ButtonToggles',
+      name: 'ButtonToggles',
+      component: ButtonToggles
     }
   ]
 })
