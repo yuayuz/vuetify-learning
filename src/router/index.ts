@@ -39,6 +39,7 @@ import TextFields from '@/views/FormInput/TextFields.vue'
 import TextAreas from '@/views/FormInput/TextAreas.vue'
 import ConfirmEdit from '@/views/DataAndDisplay/ConfirmEdit.vue'
 import DataIterators from '@/views/DataAndDisplay/DataIterators.vue'
+import DataTables from '@/views/DataAndDisplay/DataTables.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -237,6 +238,11 @@ const router = createRouter({
       path: '/DataIterators',
       name: 'DataIterators',
       component: DataIterators
+    },
+    {
+      path: '/DataTables',
+      name: 'DataTables',
+      component: DataTables
     }
   ]
 })
