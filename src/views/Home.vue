@@ -55,6 +55,7 @@ import HomeButton from '@/components/HomeButton.vue'
   <title-p1>Data And Display</title-p1>
   <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
     <home-button page="ConfirmEdit"></home-button>
+    <home-button page="DataIterators"></home-button>
   </div>
 </template>
 

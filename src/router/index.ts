@@ -38,6 +38,7 @@ import Switches from '@/views/FormInput/Switches.vue'
 import TextFields from '@/views/FormInput/TextFields.vue'
 import TextAreas from '@/views/FormInput/TextAreas.vue'
 import ConfirmEdit from '@/views/DataAndDisplay/ConfirmEdit.vue'
+import DataIterators from '@/views/DataAndDisplay/DataIterators.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -231,6 +232,11 @@ const router = createRouter({
       path: '/ConfirmEdit',
       name: 'ConfirmEdit',
       component: ConfirmEdit
+    },
+    {
+      path: '/DataIterators',
+      name: 'DataIterators',
+      component: DataIterators
     }
   ]
 })
