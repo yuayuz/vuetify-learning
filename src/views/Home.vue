@@ -46,6 +46,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="OPT"></home-button>
     <home-button page="RadioButtons"></home-button>
     <home-button page="RangeSliders"></home-button>
+    <home-button page="Selects"></home-button>
   </div>
 </template>
 
