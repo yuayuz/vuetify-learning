@@ -65,6 +65,7 @@ import Avatars from '@/views/ImageAndIconComponents/Avatars.vue'
 import Icons from '@/views/ImageAndIconComponents/Icons.vue'
 import Images from '@/views/ImageAndIconComponents/Images.vue'
 import Parallax from '@/views/ImageAndIconComponents/Parallax.vue'
+import ColorPickers from '@/views/Pickers/ColorPickers.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -393,6 +394,11 @@ const router = createRouter({
       path: '/Parallax',
       name: 'Parallax',
       component: Parallax
+    },
+    {
+      path: '/ColorPickers',
+      name: 'ColorPickers',
+      component: ColorPickers
     }
   ]
 })
