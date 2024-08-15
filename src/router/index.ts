@@ -50,6 +50,7 @@ import SlideGroups from '@/views/Selection/SlideGroups.vue'
 import Steppers from '@/views/Selection/Steppers.vue'
 import Windows from '@/views/Selection/Windows.vue'
 import Alerts from '@/views/FeedbackComponents/Alerts.vue'
+import Badges from '@/views/FeedbackComponents/Badges.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -303,6 +304,11 @@ const router = createRouter({
       path: '/Alerts',
       name: 'Alerts',
       component: Alerts
+    },
+    {
+      path: '/Badges',
+      name: 'Badges',
+      component: Badges
     }
   ]
 })
