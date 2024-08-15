@@ -66,6 +66,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Carousels"></home-button>
     <home-button page="ChipGroups"></home-button>
     <home-button page="ItemGroups"></home-button>
+    <home-button page="SlideGroups"></home-button>
   </div>
 </template>
 
