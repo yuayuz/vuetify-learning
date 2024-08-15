@@ -76,6 +76,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Badges"></home-button>
     <home-button page="Banners"></home-button>
     <home-button page="EmptyState"></home-button>
+    <home-button page="Hover"></home-button>
   </div>
 </template>
 
