@@ -82,6 +82,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Ratings"></home-button>
     <home-button page="SkeletonLoaders"></home-button>
     <home-button page="Snackbars"></home-button>
+    <home-button page="Timeline"></home-button>
   </div>
 </template>
 
