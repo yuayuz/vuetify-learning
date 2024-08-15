@@ -45,6 +45,7 @@ import InfiniteScroll from '@/views/DataAndDisplay/InfiniteScroll.vue'
 import ButtonToggles from '@/views/Selection/ButtonToggles.vue'
 import Carousels from '@/views/Selection/Carousels.vue'
 import ChipGroups from '@/views/Selection/ChipGroups.vue'
+import ItemGroups from '@/views/Selection/ItemGroups.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -273,6 +274,11 @@ const router = createRouter({
       path: '/ChipGroups',
       name: 'ChipGroups',
       component: ChipGroups
+    },
+    {
+      path: '/ItemGroups',
+      name: 'ItemGroups',
+      component: ItemGroups
     }
   ]
 })
