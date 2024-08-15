@@ -90,6 +90,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Avatars"></home-button>
     <home-button page="Icons"></home-button>
     <home-button page="Images"></home-button>
+    <home-button page="Parallax"></home-button>
   </div>
 </template>
 
