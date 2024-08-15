@@ -60,6 +60,7 @@ import Ratings from '@/views/FeedbackComponents/Ratings.vue'
 import SkeletonLoaders from '@/views/FeedbackComponents/SkeletonLoaders.vue'
 import Snackbars from '@/views/FeedbackComponents/Snackbars.vue'
 import Timeline from '@/views/FeedbackComponents/Timeline.vue'
+import AspectRatios from '@/views/ImageAndIconComponents/AspectRatios.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -363,6 +364,11 @@ const router = createRouter({
       path: '/Timeline',
       name: 'Timeline',
       component: Timeline
+    },
+    {
+      path: '/AspectRatios',
+      name: 'AspectRatios',
+      component: AspectRatios
     }
   ]
 })
