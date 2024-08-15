@@ -57,6 +57,7 @@ import Hover from '@/views/FeedbackComponents/Hover.vue'
 import ProgressCircular from '@/views/FeedbackComponents/ProgressCircular.vue'
 import ProgressLinear from '@/views/FeedbackComponents/ProgressLinear.vue'
 import Ratings from '@/views/FeedbackComponents/Ratings.vue'
+import SkeletonLoaders from '@/views/FeedbackComponents/SkeletonLoaders.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -345,6 +346,11 @@ const router = createRouter({
       path: '/Ratings',
       name: 'Ratings',
       component: Ratings
+    },
+    {
+      path: '/SkeletonLoaders',
+      name: 'SkeletonLoaders',
+      component: SkeletonLoaders
     }
   ]
 })
