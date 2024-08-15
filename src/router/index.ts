@@ -48,6 +48,7 @@ import ChipGroups from '@/views/Selection/ChipGroups.vue'
 import ItemGroups from '@/views/Selection/ItemGroups.vue'
 import SlideGroups from '@/views/Selection/SlideGroups.vue'
 import Steppers from '@/views/Selection/Steppers.vue'
+import Windows from '@/views/Selection/Windows.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -291,6 +292,11 @@ const router = createRouter({
       path: '/Steppers',
       name: 'Steppers',
       component: Steppers
+    },
+    {
+      path: '/Windows',
+      name: 'Windows',
+      component: Windows
     }
   ]
 })
