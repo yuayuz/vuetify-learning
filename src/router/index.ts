@@ -58,6 +58,7 @@ import ProgressCircular from '@/views/FeedbackComponents/ProgressCircular.vue'
 import ProgressLinear from '@/views/FeedbackComponents/ProgressLinear.vue'
 import Ratings from '@/views/FeedbackComponents/Ratings.vue'
 import SkeletonLoaders from '@/views/FeedbackComponents/SkeletonLoaders.vue'
+import Snackbars from '@/views/FeedbackComponents/Snackbars.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -351,6 +352,11 @@ const router = createRouter({
       path: '/SkeletonLoaders',
       name: 'SkeletonLoaders',
       component: SkeletonLoaders
+    },
+    {
+      path: '/Snackbars',
+      name: 'Snackbars',
+      component: Snackbars
     }
   ]
 })
