@@ -62,6 +62,7 @@ import Snackbars from '@/views/FeedbackComponents/Snackbars.vue'
 import Timeline from '@/views/FeedbackComponents/Timeline.vue'
 import AspectRatios from '@/views/ImageAndIconComponents/AspectRatios.vue'
 import Avatars from '@/views/ImageAndIconComponents/Avatars.vue'
+import Icons from '@/views/ImageAndIconComponents/Icons.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -375,6 +376,11 @@ const router = createRouter({
       path: '/Avatars',
       name: 'Avatars',
       component: Avatars
+    },
+    {
+      path: '/Icons',
+      name: 'Icons',
+      component: Icons
     }
   ]
 })

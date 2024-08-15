@@ -88,6 +88,7 @@ import HomeButton from '@/components/HomeButton.vue'
   <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
     <home-button page="AspectRatios"></home-button>
     <home-button page="Avatars"></home-button>
+    <home-button page="Icons"></home-button>
   </div>
 </template>
 
