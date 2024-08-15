@@ -77,6 +77,7 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Banners"></home-button>
     <home-button page="EmptyState"></home-button>
     <home-button page="Hover"></home-button>
+    <home-button page="ProgressCircular"></home-button>
   </div>
 </template>
 
