@@ -49,6 +49,7 @@ import ItemGroups from '@/views/Selection/ItemGroups.vue'
 import SlideGroups from '@/views/Selection/SlideGroups.vue'
 import Steppers from '@/views/Selection/Steppers.vue'
 import Windows from '@/views/Selection/Windows.vue'
+import Alerts from '@/views/FeedbackComponents/Alerts.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -297,6 +298,11 @@ const router = createRouter({
       path: '/Windows',
       name: 'Windows',
       component: Windows
+    },
+    {
+      path: '/Alerts',
+      name: 'Alerts',
+      component: Alerts
     }
   ]
 })
