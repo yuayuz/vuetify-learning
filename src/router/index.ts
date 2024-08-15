@@ -52,6 +52,7 @@ import Windows from '@/views/Selection/Windows.vue'
 import Alerts from '@/views/FeedbackComponents/Alerts.vue'
 import Badges from '@/views/FeedbackComponents/Badges.vue'
 import Banners from '@/views/FeedbackComponents/Banners.vue'
+import EmptyState from '@/views/FeedbackComponents/EmptyState.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -315,6 +316,11 @@ const router = createRouter({
       path: '/Banners',
       name: 'Banners',
       component: Banners
+    },
+    {
+      path: '/EmptyState',
+      name: 'EmptyState',
+      component: EmptyState
     }
   ]
 })
