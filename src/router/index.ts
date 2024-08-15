@@ -55,6 +55,7 @@ import Banners from '@/views/FeedbackComponents/Banners.vue'
 import EmptyState from '@/views/FeedbackComponents/EmptyState.vue'
 import Hover from '@/views/FeedbackComponents/Hover.vue'
 import ProgressCircular from '@/views/FeedbackComponents/ProgressCircular.vue'
+import ProgressLinear from '@/views/FeedbackComponents/ProgressLinear.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -333,6 +334,11 @@ const router = createRouter({
       path: '/ProgressCircular',
       name: 'ProgressCircular',
       component: ProgressCircular
+    },
+    {
+      path: '/ProgressLinear',
+      name: 'ProgressLinear',
+      component: ProgressLinear
     }
   ]
 })
