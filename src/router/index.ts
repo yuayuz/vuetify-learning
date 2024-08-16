@@ -67,6 +67,7 @@ import Images from '@/views/ImageAndIconComponents/Images.vue'
 import Parallax from '@/views/ImageAndIconComponents/Parallax.vue'
 import ColorPickers from '@/views/Pickers/ColorPickers.vue'
 import DatePickers from '@/views/Pickers/DatePickers.vue'
+import TransitionAnimation from '@/views/TransitionAnimation.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -405,6 +406,11 @@ const router = createRouter({
       path: '/DatePickers',
       name: 'DatePickers',
       component: DatePickers
+    },
+    {
+      path: '/TransitionAnimation',
+      name: 'TransitionAnimation',
+      component: TransitionAnimation
     }
   ]
 })
