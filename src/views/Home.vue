@@ -152,6 +152,7 @@ const darkMode = () => {
     class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
   >
     <home-button page="ClickOutside"></home-button>
+    <home-button page="IntersectionObserver"></home-button>
   </div>
 </template>
 
