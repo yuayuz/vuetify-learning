@@ -153,6 +153,7 @@ const darkMode = () => {
   >
     <home-button page="ClickOutside"></home-button>
     <home-button page="IntersectionObserver"></home-button>
+    <home-button page="Resize"></home-button>
   </div>
 </template>
 

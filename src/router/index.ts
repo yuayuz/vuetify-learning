@@ -70,6 +70,7 @@ import DatePickers from '@/views/Pickers/DatePickers.vue'
 import TransitionAnimation from '@/views/TransitionAnimation.vue'
 import ClickOutside from '@/views/Directives/ClickOutside.vue'
 import IntersectionObserver from '@/views/Directives/IntersectionObserver.vue'
+import Resize from '@/views/Directives/Resize.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -423,6 +424,11 @@ const router = createRouter({
       path: '/IntersectionObserver',
       name: 'IntersectionObserver',
       component: IntersectionObserver
+    },
+    {
+      path: '/Resize',
+      name: 'Resize',
+      component: Resize
     }
   ]
 })
