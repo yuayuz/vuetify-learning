@@ -5,5 +5,6 @@ export default {
     extend: {}
   },
   plugins: [],
-  prefix: 'tw-'
+  prefix: 'tw-',
+  darkMode: 'selector'
 }

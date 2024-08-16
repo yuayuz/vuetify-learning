@@ -1,13 +1,43 @@
 <script lang="ts" setup>
-import TitleH1 from '@/components/TitleH1.vue'
 import TitleP1 from '@/components/TitleP1.vue'
 import HomeButton from '@/components/HomeButton.vue'
+
+import { useTheme } from 'vuetify'
+import { ref } from 'vue'
+
+const theme = useTheme()
+const darkValue = ref('light')
+const darkMode = () => {
+  localStorage.theme = 'tw-dark'
+
+  if (theme.global.current.value.dark) {
+    theme.global.name.value = 'light'
+    document.documentElement.classList.remove('tw-dark')
+  } else {
+    theme.global.name.value = 'dark'
+    document.documentElement.classList.add('tw-dark')
+  }
+  darkValue.value = theme.global.name.value
+}
 </script>
 
-<template>
-  <title-h1>Home</title-h1>
-  <title-p1>Containment</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+<template class="tw-relative">
+  <div
+    class="tw-fixed tw-left-0 tw-right-0 tw-top-0 tw-flex tw-h-10 tw-items-center tw-border tw-border-violet-400 tw-bg-violet-500 dark:tw-border dark:tw-border-violet-400"
+  >
+    <p>home</p>
+    <v-icon
+      :icon="darkValue === 'light' ? 'mdi-weather-night' : 'mdi-white-balance-sunny'"
+      @click="darkMode()"
+      class="tw-absolute tw-right-10 tw-text-white"
+    >
+    </v-icon>
+  </div>
+
+  <title-p1 class="tw-mt-10">Containment</title-p1>
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="VBottomSheet"></home-button>
     <home-button page="ButtonView"></home-button>
     <home-button page="CardView"></home-button>
@@ -23,7 +53,9 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="ToolTips"></home-button>
   </div>
   <title-p1>Navigation</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="AppBars"></home-button>
     <home-button page="BottomNavigation"></home-button>
     <home-button page="Breadcrumbs"></home-button>
@@ -36,7 +68,9 @@ import HomeButton from '@/components/HomeButton.vue'
   </div>
 
   <title-p1>Form Input</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="Autocomplete"></home-button>
     <home-button page="Checkboxes"></home-button>
     <home-button page="Combobox"></home-button>
@@ -53,7 +87,9 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="TextAreas"></home-button>
   </div>
   <title-p1>Data And Display</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="ConfirmEdit"></home-button>
     <home-button page="DataIterators"></home-button>
     <home-button page="DataTables"></home-button>
@@ -61,7 +97,9 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="InfiniteScroll"></home-button>
   </div>
   <title-p1>选择组件 (Selection)</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="ButtonToggles"></home-button>
     <home-button page="Carousels"></home-button>
     <home-button page="ChipGroups"></home-button>
@@ -71,7 +109,9 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Windows"></home-button>
   </div>
   <title-p1>反馈式组件</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="Alerts"></home-button>
     <home-button page="Badges"></home-button>
     <home-button page="Banners"></home-button>
@@ -85,7 +125,9 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Timeline"></home-button>
   </div>
   <title-p1>反馈式组件</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="AspectRatios"></home-button>
     <home-button page="Avatars"></home-button>
     <home-button page="Icons"></home-button>
@@ -93,12 +135,16 @@ import HomeButton from '@/components/HomeButton.vue'
     <home-button page="Parallax"></home-button>
   </div>
   <title-p1>反馈式组件</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="ColorPickers"></home-button>
     <home-button page="DatePickers"></home-button>
   </div>
   <title-p1>过渡动画</title-p1>
-  <div class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow">
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
     <home-button page="TransitionAnimation"></home-button>
   </div>
 </template>
