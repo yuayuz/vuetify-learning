@@ -72,6 +72,7 @@ import ClickOutside from '@/views/Directives/ClickOutside.vue'
 import IntersectionObserver from '@/views/Directives/IntersectionObserver.vue'
 import Resize from '@/views/Directives/Resize.vue'
 import Ripple from '@/views/Directives/Ripple.vue'
+import Scroll from '@/views/Directives/Scroll.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -435,6 +436,11 @@ const router = createRouter({
       path: '/Ripple',
       name: 'Ripple',
       component: Ripple
+    },
+    {
+      path: '/Scroll',
+      name: 'Scroll',
+      component: Scroll
     }
   ]
 })
