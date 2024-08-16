@@ -147,6 +147,12 @@ const darkMode = () => {
   >
     <home-button page="TransitionAnimation"></home-button>
   </div>
+  <title-p1>Directives</title-p1>
+  <div
+    class="tw-mx-6 tw-mt-4 tw-space-x-3 tw-space-y-1 tw-bg-slate-50 tw-px-3 tw-py-2 tw-shadow dark:tw-bg-black"
+  >
+    <home-button page="ClickOutside"></home-button>
+  </div>
 </template>
 
 <style scoped></style>

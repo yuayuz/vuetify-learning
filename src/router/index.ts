@@ -68,6 +68,7 @@ import Parallax from '@/views/ImageAndIconComponents/Parallax.vue'
 import ColorPickers from '@/views/Pickers/ColorPickers.vue'
 import DatePickers from '@/views/Pickers/DatePickers.vue'
 import TransitionAnimation from '@/views/TransitionAnimation.vue'
+import ClickOutside from '@/views/Directives/ClickOutside.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -411,6 +412,11 @@ const router = createRouter({
       path: '/TransitionAnimation',
       name: 'TransitionAnimation',
       component: TransitionAnimation
+    },
+    {
+      path: '/ClickOutside',
+      name: 'ClickOutside',
+      component: ClickOutside
     }
   ]
 })
