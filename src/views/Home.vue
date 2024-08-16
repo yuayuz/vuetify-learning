@@ -156,6 +156,7 @@ const darkMode = () => {
     <home-button page="Resize"></home-button>
     <home-button page="Ripple"></home-button>
     <home-button page="Scroll"></home-button>
+    <home-button page="Tooltip"></home-button>
   </div>
 </template>
 
