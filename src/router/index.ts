@@ -71,6 +71,7 @@ import TransitionAnimation from '@/views/TransitionAnimation.vue'
 import ClickOutside from '@/views/Directives/ClickOutside.vue'
 import IntersectionObserver from '@/views/Directives/IntersectionObserver.vue'
 import Resize from '@/views/Directives/Resize.vue'
+import Ripple from '@/views/Directives/Ripple.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -429,6 +430,11 @@ const router = createRouter({
       path: '/Resize',
       name: 'Resize',
       component: Resize
+    },
+    {
+      path: '/Ripple',
+      name: 'Ripple',
+      component: Ripple
     }
   ]
 })
